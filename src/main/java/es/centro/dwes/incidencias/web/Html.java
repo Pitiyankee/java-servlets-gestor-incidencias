@@ -54,7 +54,7 @@ public final class Html {
     public static void pie(PrintWriter out) {
         out.println("""
                 </main>
-                <footer class="pie">Práctica 2 · DWES</footer>
+                <footer class="pie">Gestor de incidencias</footer>
                 </body>
                 </html>
                 """);
