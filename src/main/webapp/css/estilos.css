@@ -1,0 +1,187 @@
+:root {
+    font-family: system-ui, sans-serif;
+    color: #1f2937;
+    background: #f3f4f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: #1d4ed8;
+}
+
+.contenedor {
+    width: min(1050px, 92%);
+    margin-inline: auto;
+}
+
+.cabecera {
+    background: #172554;
+    color: white;
+    padding: 1rem 0;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cabecera a {
+    color: white;
+    margin-right: 1rem;
+}
+
+.marca {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main {
+    padding-block: 2rem;
+}
+
+.portada,
+section,
+article,
+.formulario,
+.filtros,
+.mensaje {
+    background: white;
+    margin-top: 1rem;
+    padding: 1.25rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+}
+
+.formulario {
+    display: grid;
+    gap: 0.55rem;
+}
+
+input,
+select,
+textarea,
+button,
+.boton {
+    font: inherit;
+    padding: 0.65rem;
+}
+
+textarea {
+    min-height: 9rem;
+    resize: vertical;
+}
+
+button,
+.boton {
+    background: #1d4ed8;
+    color: white;
+    border: 0;
+    border-radius: 0.35rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.secundario {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.en-linea {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.error-campo,
+.error {
+    color: #991b1b;
+}
+
+.exito {
+    border-left: 5px solid #15803d;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: end;
+}
+
+.tabla-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid #d1d5db;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 0.5rem;
+}
+
+dt {
+    font-weight: 700;
+}
+
+.texto-largo {
+    white-space: pre-wrap;
+}
+
+.acciones {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.pie {
+    text-align: center;
+    padding: 2rem;
+    color: #4b5563;
+}
+
+@media (max-width: 650px) {
+    .barra {
+        display: block;
+    }
+
+    dl {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contadores div {
+    flex: 1 1 8rem;
+    display: grid;
+    text-align: center;
+}
+
+.contadores strong {
+    font-size: 1.8rem;
+    color: #1d4ed8;
+}
